@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* color */
+	--white-color: #fff;
+	--black-color: #140a00;
+	--blue-color: #045fd4;
+	--red-color: #ff0000;
+	--grey-dark-color: #909090;
+	--grey-light-color: #e0e0e0;
+
+	/* Size */
+	--padding: 1.2rem;
+	--avatar-size: 3.6rem;
+
+	/* Font Size */
+	--font-large: 1.8rem;
+	--font-medium: 1.4rem;
+	--font-small: 1.2rem;
+	--font-micro: 1rem;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+/*/////////////// Header /////////////// */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: var(--padding);
+	background-color: var(--black-color);
+	color: var(--white-color);
+}
+
+.logo {
+	font-size: var(--font-large);
+}
+
+.fa-youtube {
+	color: var(--red-color);
+}
+
+.icons {
+	font-size: var(--font-large);
+}
+
+.fa-search {
+	margin-right: var(--padding);
+}
+
+
+/*/ ////////////// Video /////////////// */
+
+.player {
+	position: sticky;
+	top: 0;
+	text-align: center;
+	background-color: var(--black-color);
+}
+
+.video {
+	width: 100%;
+	max-height: 100rem;
+	max-width: 100rem;
+}
+
+.info {
+	padding: var(--padding);
+}
+
+.hashtags {
+	display: flex;
+	font-size: var(--font-small);
+}
+
+.hashtag {
+	margin-right: 0.8rem;
+	color: var(--blue-color);
+	margin-bottom: 0.3rem;
+}
+
+.title-and-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.info-title {
+	font-size: var(--font-medium);
+	margin-bottom: 0.8rem;
+}
+
+.fa-caret-down {
+	border: none;
+}
