@@ -46,6 +46,7 @@ button:focus {
 
 /* /////////////// Header /////////////// */
 /* ////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
 
 header {
 	display: flex;
@@ -73,6 +74,7 @@ header {
 
 /*  /////////////// Video //////////////////////////// */
 /* ////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
 
 .player {
 	position: sticky;
@@ -82,7 +84,7 @@ header {
 }
 
 .video {
-	width: 100%;
+	width: 30%;
 	max-height: 100rem;
 	max-width: 100rem;
 }
@@ -203,9 +205,43 @@ header {
 	justify-self: end;
 	background-color: var(--white-color);
 	border: none;
+	text-transform: uppercase;
+	color: var(--red-color);
+	font-size: var(--font-medium);
 }
 
 .subscribe:hover,
 .subscribe:active {
 	color: var(--blue-color);
+}
+
+/*/ ////////////// Up next /////////////// */
+/* ////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+.up-next {
+	padding: 0 var(--padding);
+	/* max-width: 100rem; */
+}
+
+.up-next > .title {
+	font-size: var(--font-small);
+	color: var(--grey-dark-color);
+	margin-bottom: 2rem;
+}
+
+.up-next ul li img {
+	width: 20rem;
+	max-width: 30rem;
+}
+
+.up-next .item .up-next-info .up-next-title {
+	font-size: var(--font-medium);
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+.up-next .item .views {
+	display: block;
 }
