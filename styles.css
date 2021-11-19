@@ -157,6 +157,55 @@ header {
 	font-size: 1.6rem;
 }
 
-.btn-actions:focus {
+.btn-actions:focus,
+.btn-actions:hover,
+.brtn-actions:active {
+	color: var(--blue-color);
+}
+
+/*/ ////////////// Video Info Channel /////////////// */
+/* ////////////////////////////////////////////////// */
+
+.channel {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	max-width: 100rem;
+	padding: var(--padding);
+	border-top: solid 0.1rem var(--grey-light-color);
+	border-bottom: solid 0.1rem var(--grey-light-color);
+}
+
+.channel .metadata {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	align-items: center;
+}
+
+.channel .metadata img {
+	width: var(--avatar-size);
+	border-radius: 50%;
+}
+
+.channel .channel-info {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+}
+
+.channel .channel-info .avatar {
+	font-size: var(--font-medium);
+}
+
+.subscribers {
+	color: var(--grey-dark-color);
+}
+
+.subscribe {
+	justify-self: end;
+	background-color: var(--white-color);
+	border: none;
+}
+
+.subscribe:hover,
+.subscribe:active {
 	color: var(--blue-color);
 }
