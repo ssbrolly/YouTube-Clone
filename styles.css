@@ -32,11 +32,20 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-ul {
+ul,
+li {
 	list-style: none;
 }
 
-/*/////////////// Header /////////////// */
+button,
+button:focus {
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+/* /////////////// Header /////////////// */
+/* ////////////////////////////////////////////////// */
 
 header {
 	display: flex;
@@ -62,8 +71,8 @@ header {
 	margin-right: var(--padding);
 }
 
-
-/*/ ////////////// Video /////////////// */
+/*  /////////////// Video //////////////////////////// */
+/* ////////////////////////////////////////////////// */
 
 .player {
 	position: sticky;
@@ -78,8 +87,14 @@ header {
 	max-width: 100rem;
 }
 
+/*/ ////////////// Video Info Metadata /////////////// */
+/* ////////////////////////////////////////////////// */
 .info {
 	padding: var(--padding);
+}
+
+.info-metadata {
+	margin-bottom: 1.3rem;
 }
 
 .hashtags {
@@ -97,13 +112,51 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	max-width: 100rem;
 }
 
 .info-title {
 	font-size: var(--font-medium);
-	margin-bottom: 0.8rem;
+	margin-bottom: 0.3rem;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+.views {
+	font-size: var(--font-small);
+	color: var(--grey-dark-color);
 }
 
 .fa-caret-down {
-	border: none;
+	margin-left: 1rem;
+}
+
+/*/ ////////////// Video Info Actions /////////////// */
+/* ////////////////////////////////////////////////// */
+.actions {
+	display: flex;
+	width: 100%;
+	max-width: 100rem;
+	justify-content: space-around;
+	font-size: var(--font-small);
+	padding: var(--padding);
+}
+
+.actions li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.8rem;
+	color: var(--grey-dark-color);
+}
+
+.actions button {
+	color: var(--grey-dark-color);
+	font-size: 1.6rem;
+}
+
+.btn-actions:focus {
+	color: var(--blue-color);
 }
