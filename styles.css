@@ -44,6 +44,21 @@ button:focus {
 	outline: none;
 }
 
+/*/ ////////////// Info - Up next /////////////// */
+/* ////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+
+.info-up-next {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+	.info-up-next {
+		flex-direction: row;
+	}
+}
+
 /* /////////////// Header /////////////// */
 /* ////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////// */
@@ -84,7 +99,7 @@ header {
 }
 
 .video {
-	width: 30%;
+	width: 100%;
 	max-height: 100rem;
 	max-width: 100rem;
 }
@@ -120,10 +135,6 @@ header {
 .info-title {
 	font-size: var(--font-medium);
 	margin-bottom: 0.3rem;
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
-	overflow: hidden;
 }
 
 .views {
@@ -224,24 +235,61 @@ header {
 }
 
 .up-next > .title {
-	font-size: var(--font-small);
+	font-size: var(--font-medium);
 	color: var(--grey-dark-color);
-	margin-bottom: 2rem;
+	margin-bottom: calc(var(--padding) / 2);
 }
 
-.up-next ul li img {
-	width: 20rem;
+.up-next .item {
+	/* display: grid;
+	grid-template-columns: 1.2fr 6fr 0.1fr; */
+	display: flex;
+	margin-bottom: 1.2rem;
+}
+.item .up-next-img {
+	flex: 1 1 35%;
+	margin-right: 0.8rem;
+}
+
+.item .up-next-img img {
+	width: 100%;
 	max-width: 30rem;
 }
 
+.up-next .item .up-next-info {
+	/* display: flex;
+	flex-direction: column;
+	flex-grow: 0; */
+}
+
 .up-next .item .up-next-info .up-next-title {
-	font-size: var(--font-medium);
+	display: block;
+	flex: 0 1 60%;
+	font-size: var(--font-small);
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+
+.up-next .item .up-next-info .name,
+.up-next .item .up-next-info .views {
+	display: block;
+	font-size: var(--font-micro);
+	color: var(--grey-dark-color);
+}
+
+.up-next .item .more-btn {
+	flex: 0 1 5%;
+	border: none;
+	outline: none;
+	background-color: var(--white-color);
+	align-self: flex-start;
+}
+
+.line-clamp {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 2;
 	overflow: hidden;
-}
-
-.up-next .item .views {
-	display: block;
 }
