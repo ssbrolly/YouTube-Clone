@@ -1,0 +1,40 @@
+:root {
+	/* color */
+	--white-color: #fff;
+	--black-color: #140a00;
+	--blue-color: #045fd4;
+	--red-color: #ff0000;
+	--grey-dark-color: #909090;
+	--grey-light-color: #e0e0e0;
+
+	/* Size */
+	--padding: 1.2rem;
+	--padding-medium: 1.8rem;
+	--padding-large: 2.4rem;
+	--avatar-size: 3.6rem;
+
+	/* Font Size */
+	--font-large: 1.8rem;
+	--font-medium: 1.4rem;
+	--font-small: 1.2rem;
+	--font-micro: 1rem;
+}
+
+@media screen and (min-width: 723px) {
+	.main-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.player {
+		grid-column: 1 / -1;
+	}
+}
+
+@media screen and (min-width: 1123px) {
+	.main-section {
+		display: grid;
+		grid-template-columns: 3fr 1.5fr;
+		column-gap: 3rem;
+		/* grid-template-rows: repeat(2, 1fr); */
+	}
+}

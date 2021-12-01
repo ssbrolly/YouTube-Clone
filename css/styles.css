@@ -15,6 +15,9 @@
 
 	/* Size */
 	--padding: 1.2rem;
+	--padding-medium: 1.8rem;
+	--padding-large: 2.4rem;
+	--padding-extra-large: 3.4rem;
 	--avatar-size: 3.6rem;
 
 	/* Font Size */
@@ -44,19 +47,12 @@ button:focus {
 	outline: none;
 }
 
-/*/ ////////////// Info - Up next /////////////// */
+/*/ ////////////// Main-section /////////////// */
 /* ////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////// */
-
-.info-up-next {
-	display: flex;
-	flex-direction: column;
-}
-
-@media screen and (min-width: 768px) {
-	.info-up-next {
-		flex-direction: row;
-	}
+.main-section {
+	margin: 0 var(--padding-extra-large);
+	/* background-color: var(--black-color); */
 }
 
 /* /////////////// Header /////////////// */
@@ -66,9 +62,11 @@ button:focus {
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: var(--padding);
+	padding: var(--padding-large);
 	background-color: var(--black-color);
 	color: var(--white-color);
+	position: sticky;
+	top: 0;
 }
 
 .logo {
@@ -87,27 +85,30 @@ header {
 	margin-right: var(--padding);
 }
 
-/*  /////////////// Video //////////////////////////// */
+/* //////////////// Video //////////////////////////// */
 /* ////////////////////////////////////////////////// */
-/* ////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////// */
 
 .player {
-	position: sticky;
-	top: 0;
-	text-align: center;
-	background-color: var(--black-color);
+	/* position: sticky;
+    top: 0; */
+	/* text-align: center; */
+	/* background-color: var(--black-color); */
 }
 
 .video {
 	width: 100%;
-	max-height: 100rem;
-	max-width: 100rem;
+	/* max-height: 100rem;
+	max-width: 100rem; */
+	padding-bottom: 3.2rem;
 }
 
 /*/ ////////////// Video Info Metadata /////////////// */
 /* ////////////////////////////////////////////////// */
+
 .info {
-	padding: var(--padding);
+	/* padding: var(--padding); */
+	grid-row: 2 / 3;
 }
 
 .info-metadata {
@@ -129,7 +130,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	max-width: 100rem;
+	width: 100%;
 }
 
 .info-title {
@@ -230,7 +231,7 @@ header {
 /* ////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////// */
 .up-next {
-	padding: 0 var(--padding);
+	/* padding: 0 var(--padding); */
 	/* max-width: 100rem; */
 }
 
