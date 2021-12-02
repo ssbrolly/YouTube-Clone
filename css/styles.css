@@ -51,7 +51,7 @@ button:focus {
 /* ////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////// */
 .main-section {
-	margin: 0 var(--padding-extra-large);
+	margin: 0 var(--padding);
 	/* background-color: var(--black-color); */
 }
 
@@ -107,8 +107,7 @@ header {
 /* ////////////////////////////////////////////////// */
 
 .info {
-	/* padding: var(--padding); */
-	grid-row: 2 / 3;
+	margin-bottom: var(--padding);
 }
 
 .info-metadata {
