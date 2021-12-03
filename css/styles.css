@@ -51,8 +51,7 @@ button:focus {
 /* ////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////// */
 .main-section {
-	margin: 0 var(--padding);
-	/* background-color: var(--black-color); */
+	margin: var(--padding);
 }
 
 /* /////////////// Header /////////////// */
@@ -69,12 +68,24 @@ header {
 	top: 0;
 }
 
-.logo {
-	font-size: var(--font-large);
+.logo,
+.logo a {
+	font-size: 2.4rem;
+}
+
+.logo a {
+	text-decoration: none;
+	letter-spacing: -2px;
 }
 
 .fa-youtube {
 	color: var(--red-color);
+}
+
+.header-title {
+	color: var(--white-color);
+	letter-spacing: -2px;
+	font-weight: 500;
 }
 
 .icons {
@@ -88,13 +99,6 @@ header {
 /* //////////////// Video //////////////////////////// */
 /* ////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////// */
-
-.player {
-	/* position: sticky;
-    top: 0; */
-	/* text-align: center; */
-	/* background-color: var(--black-color); */
-}
 
 .video {
 	width: 100%;

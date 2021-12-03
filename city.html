@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+		<script src="https://kit.fontawesome.com/025b62b6b9.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/media.css" />
+		<script defer src="main.js"></script>
+		<title>YouTube</title>
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<div class="logo">
+				<a href="index.html">
+					<i class="fab fa-youtube fa-lg"></i>
+					<span class="header-title">YouTube</span>
+				</a>
+			</div>
+			<div class="input">
+				<form type="text">
+					<input type="text" class="input-search" placeholder="Search" />
+					<button class="input-btn">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+			</div>
+			<div class="icons">
+				<i class="fas fa-search"></i>
+				<i class="fas fa-ellipsis-v"></i>
+			</div>
+		</header>
+
+		<div class="main-section">
+			<!-- Video Player -->
+			<!-- <div class="player-info"> -->
+			<section class="player">
+				<video
+					controls
+					src="video/pexels-kelly-lacy-9722139.mp4"
+					class="video"
+					onmouseover="this.play()"
+					onmouseout="this.pause(); this.currentTime = 0;"
+				></video>
+			</section>
+
+			<!-- Video Info -->
+			<section class="info">
+				<!-- Metadata -->
+				<div class="info-metadata">
+					<ul class="hashtags">
+						<li class="hashtag">#CloneCoding</li>
+						<li class="hashtag">#CloneCoders</li>
+						<li class="hashtag">#Usong</li>
+					</ul>
+					<div class="title-and-buttons">
+						<span class="info-title line-clamp"
+							>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore blanditiis, ea quam laudantium fugit aut
+							repellat eligendi, earum beatae voluptatem odio praesentium veniam. Enim quis ullam eaque consectetur consequatur?
+						</span>
+						<button class="moreBtn">
+							<i class="fas fa-caret-down"></i>
+						</button>
+					</div>
+					<span class="views"> 1M views 1 month ago</span>
+				</div>
+				<!-- Actions -->
+				<div class="actions">
+					<li>
+						<button class="btn-actions"><i class="fas fa-thumbs-up actions-icon"></i></button>
+						<span>1M</span>
+					</li>
+					<li>
+						<button class="btn-actions"><i class="fas fa-thumbs-down"></i></button>
+						<span>0</span>
+					</li>
+					<li>
+						<button class="btn-actions"><i class="fas fa-share"></i></button>
+						<span>share</span>
+					</li>
+					<li>
+						<button class="btn-actions"><i class="fas fa-plus"></i></button>
+						<span>save</span>
+					</li>
+					<li>
+						<button class="btn-actions"><i class="fas fa-flag"></i></button>
+						<span>report</span>
+					</li>
+				</div>
+
+				<!-- Channel -->
+				<div class="channel">
+					<div class="metadata">
+						<img src="images/ben copy.jpg" alt="Photo of Dan" />
+						<div class="channel-info">
+							<span class="avatar">CloneCoding by Usong</span>
+							<span class="subscribers">1M subscribers</span>
+						</div>
+					</div>
+					<button class="subscribe">SUBSCRIBE</button>
+				</div>
+			</section>
+			<!-- </div> -->
+
+			<!-- UpNext -->
+			<section class="up-next">
+				<span class="title">Up next</span>
+				<ul>
+					<li class="item">
+						<div class="up-next-img">
+							<img src="images/gallery-1 copy.jpg" alt="image of Korean cuisine" />
+						</div>
+						<div class="up-next-info">
+							<span class="up-next-title"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui aliquam placeat fugiat? Voluptate,
+								architecto culpa odio minima ipsum totam eum quas voluptates, sequi omnis deleniti quod sapiente molestias
+								assumenda.</span
+							>
+							<span class="name">CloneCoding by Dan</span>
+							<span class="views">1M views</span>
+						</div>
+						<button class="more-btn">
+							<i class="fas fa-ellipsis-v"></i>
+						</button>
+					</li>
+					<li class="item">
+						<div class="up-next-img">
+							<img src="images/gallery-2 copy.jpg" alt="image of Korean cuisine" />
+						</div>
+						<div class="up-next-info">
+							<span class="up-next-title"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui aliquam placeat fugiat? Voluptate,
+								architecto culpa odio minima ipsum totam eum quas voluptates, sequi omnis deleniti quod sapiente molestias
+								assumenda.</span
+							>
+							<span class="name">CloneCoding by Dan</span>
+							<span class="views">1M views</span>
+						</div>
+						<button class="more-btn">
+							<i class="fas fa-ellipsis-v"></i>
+						</button>
+					</li>
+					<li class="item">
+						<div class="up-next-img">
+							<img src="images/gallery-2 copy.jpg" alt="image of Korean cuisine" />
+						</div>
+						<div class="up-next-info">
+							<span class="up-next-title"
+								>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui aliquam placeat fugiat? Voluptate,
+								architecto culpa odio minima ipsum totam eum quas voluptates, sequi omnis deleniti quod sapiente molestias
+								assumenda.</span
+							>
+							<span class="name">CloneCoding by Dan</span>
+							<span class="views">1M views</span>
+						</div>
+						<button class="more-btn">
+							<i class="fas fa-ellipsis-v"></i>
+						</button>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</body>
+</html>

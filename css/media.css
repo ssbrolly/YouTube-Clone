@@ -24,7 +24,7 @@
 	.main-section {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		margin: 0 var(--padding);
+		/* margin: 0 var(--padding); */
 		column-gap: 3rem;
 	}
 
