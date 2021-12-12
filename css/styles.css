@@ -21,6 +21,7 @@
 	--avatar-size: 3.6rem;
 
 	/* Font Size */
+	--font-xlarge: 2.4rem;
 	--font-large: 1.8rem;
 	--font-medium: 1.4rem;
 	--font-small: 1.2rem;
@@ -33,6 +34,7 @@ html {
 
 body {
 	font-family: 'Roboto', sans-serif;
+	background-color: #111;
 }
 
 ul,
@@ -60,9 +62,10 @@ button:focus {
 
 header {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	padding: var(--padding-large);
-	background-color: var(--black-color);
+	padding: 0.5rem var(--padding-large);
+	background-color: #111;
 	color: var(--white-color);
 	position: sticky;
 	top: 0;
@@ -88,13 +91,72 @@ header {
 	font-weight: 500;
 }
 
-.icons {
+.input {
+	display: flex;
+	align-items: center;
+}
+
+.input-text {
+	display: flex;
+	align-items: center;
+}
+
+.input-text,
+.input-search {
+	border: 1px solid #9090905e;
+	background-color: var(--black-color);
+}
+
+.input-btn {
+	display: flex;
+	width: 6rem;
+	font-size: var(--font-xlarge);
+	background-color: var(--black-color);
+	align-items: center;
+	justify-content: center;
+}
+
+.input-search {
+	height: 4rem;
+	width: 57rem;
+	background-color: #000;
+	text-indent: 10px;
+	border-radius: 3px;
 	font-size: var(--font-large);
 }
 
-.fa-search {
-	margin-right: var(--padding);
+.input-search:focus {
+	outline: none;
+	border-color: rgba(61, 166, 235, 0.623);
 }
+
+.mic-icon {
+	margin-left: 1.3rem;
+	font-size: var(--font-large);
+}
+
+.icons {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 2.5rem;
+	font-size: var(--font-xlarge);
+}
+
+.account {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: var(--font-large);
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+	background-color: rgb(46, 193, 212);
+}
+
+/* .fa-search {
+	margin-right: var(--padding);
+} */
 
 /* //////////////// Video //////////////////////////// */
 /* ////////////////////////////////////////////////// */
