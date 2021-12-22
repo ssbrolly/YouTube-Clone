@@ -47,12 +47,13 @@
 	display: flex;
 	justify-content: center;
 	position: fixed;
-	/* left: -100%; */
-	left: 0%;
+	left: -100%;
+	/* left: 0%; */
 	padding-top: 2rem;
 }
 
 .side-menu.active {
+	left: 0%;
 	width: 20rem;
 	background-color: #111;
 	justify-content: flex-start;
