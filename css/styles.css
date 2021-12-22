@@ -61,9 +61,24 @@
 }
 
 .side-menu.active hr {
+	width: 19rem;
+	margin-bottom: 1.8rem;
+	background-color: #90909042;
+	height: 2px;
+	border: none;
+	transform: translatex(-3rem);
+	/* display: inline-block; */
+	/* float: left; */
+	/* top: 100rem; */
+}
+
+/* hr {
 	width: 100%;
 	margin-bottom: 1.8rem;
-}
+	background-color: #90909042;
+	height: 2px;
+	border: none;
+} */
 
 .side-menu-icon {
 	color: var(--white-color);
