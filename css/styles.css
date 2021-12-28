@@ -31,12 +31,18 @@
 
 /* /////////// The header has been placed in General Css //// */
 
+/* //////////////// Menus //////////////////////// */
+/* .menus {
+	display: flex;
+} */
+
 /* //////////////// Side menu //////////////////////// */
 /* ////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////// */
 
-.main-contents {
-	display: flex;
+.side-menu-section {
+	/* display: block; */
+	width: 20rem;
 }
 
 .side-menu {
@@ -68,18 +74,7 @@
 	height: 2px;
 	border: none;
 	transform: translatex(-3rem);
-	/* display: inline-block; */
-	/* float: left; */
-	/* top: 100rem; */
 }
-
-/* hr {
-	width: 100%;
-	margin-bottom: 1.8rem;
-	background-color: #90909042;
-	height: 2px;
-	border: none;
-} */
 
 .side-menu-icon {
 	color: var(--white-color);
@@ -97,6 +92,26 @@
 
 .side-menu-icon span {
 	font-size: 1.4rem;
+}
+
+/* //////////////// Categories //////////////////////////// */
+/* ////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////// */
+.categories {
+	/* position: fixed; */
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.categories-ul {
+	display: flex;
+	justify-content: space-between;
+	gap: 15rem;
+	height: 5rem;
+}
+
+.categories.active {
+	transform: translateX(20rem);
 }
 
 /* //////////////// Video //////////////////////////// */
