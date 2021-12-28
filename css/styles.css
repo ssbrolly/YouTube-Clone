@@ -97,21 +97,33 @@
 /* //////////////// Categories //////////////////////////// */
 /* ////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////// */
-.categories {
-	/* position: fixed; */
+
+.categories-ul {
+	display: flex;
+	/* justify-content: space-between; */
+	gap: 1rem;
 	overflow-x: auto;
 	white-space: nowrap;
 }
 
-.categories-ul {
-	display: flex;
-	justify-content: space-between;
-	gap: 15rem;
-	height: 5rem;
+.categories-ul li {
+	/* display: flex; */
+	/* height: 4rem; */
+	padding: 2rem;
+	align-items: center;
+}
+
+.categories-ul li a {
+	font-size: 1.4rem;
+	text-decoration: none;
+	color: var(--white-color);
 }
 
 .categories.active {
 	transform: translateX(20rem);
+}
+
+.categories-ul:hover {
 }
 
 /* //////////////// Video //////////////////////////// */
