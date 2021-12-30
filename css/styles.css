@@ -98,6 +98,15 @@
 /* ////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////// */
 
+.categories-ul::-webkit-scrollbar {
+	display: none;
+}
+
+.categories-ul {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
 .categories-ul {
 	display: flex;
 	/* justify-content: space-between; */
