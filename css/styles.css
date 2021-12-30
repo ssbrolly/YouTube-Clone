@@ -42,13 +42,13 @@
 
 .side-menu-section {
 	/* display: block; */
-	width: 20rem;
+	width: 17.5rem;
 }
 
 .side-menu {
 	color: var(--white-color);
 	background-color: #111;
-	width: 7rem;
+	width: 100%;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -58,22 +58,29 @@
 	padding-top: 2rem;
 }
 
+.side-menu li {
+	width: 100%;
+}
+
+.side-menu li:hover {
+	background-color: #9090904d;
+}
+
 .side-menu.active {
 	left: 0%;
-	width: 20rem;
+	width: 100%;
 	background-color: #111;
 	justify-content: flex-start;
-	padding-left: 27px;
 	font-size: 1.8rem;
 }
 
 .side-menu.active hr {
-	width: 19rem;
-	margin-bottom: 1.8rem;
+	width: 21rem;
+	margin: 1.8rem 0rem;
 	background-color: #90909042;
 	height: 2px;
 	border: none;
-	transform: translatex(-3rem);
+	/* transform: translatex(-3rem); */
 }
 
 .side-menu-icon {
@@ -82,7 +89,8 @@
 	display: flex;
 	align-items: center;
 	gap: 1.8rem;
-	margin-bottom: 1.8rem;
+	padding: 0.85rem 0rem 0.85rem 2.7rem;
+	/* margin-bottom: 1.8rem; */
 }
 
 .side-menu-icon ion-icon {
@@ -130,9 +138,6 @@
 
 .categories.active {
 	transform: translateX(20rem);
-}
-
-.categories-ul:hover {
 }
 
 /* //////////////// Video //////////////////////////// */
