@@ -13,6 +13,5 @@ menuBars.addEventListener('click', () => {
 
 categoriesUl.addEventListener('wheel', e => {
 	e.preventDefault();
-	console.log(e.deltaY);
 	categoriesUl.scrollLeft += e.deltaY;
 });
