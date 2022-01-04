@@ -94,6 +94,13 @@
 /* ////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////// */
 
+.categories {
+	position: fixed;
+	z-index: 2;
+	/* overflow: hidden; */
+	background-color: #111;
+}
+
 .categories-ul::-webkit-scrollbar {
 	display: none;
 }
@@ -128,15 +135,18 @@
 	transform: translateX(20rem);
 }
 
-/* //////////////// Video //////////////////////////// */
+/*/ ////////////// Videos //////////////////////////// */
 /* ////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////// */
+.videos {
+	height: auto;
+	overflow: auto;
+	margin-top: 9rem;
+}
 
-.video {
-	width: 100%;
-	/* max-height: 100rem;
-	max-width: 100rem; */
-	padding-bottom: 3.2rem;
+.videos video {
+	width: 20rem;
+	transform: translateX(20rem);
 }
 
 /*/ ////////////// Video Info Metadata /////////////// */
@@ -290,12 +300,6 @@
 .item .up-next-img img {
 	width: 100%;
 	max-width: 30rem;
-}
-
-.up-next .item .up-next-info {
-	/* display: flex;
-	flex-direction: column;
-	flex-grow: 0; */
 }
 
 .up-next .item .up-next-info .up-next-title {

@@ -14,4 +14,8 @@ menuBars.addEventListener('click', () => {
 categoriesUl.addEventListener('wheel', e => {
 	e.preventDefault();
 	categoriesUl.scrollLeft += e.deltaY;
+	if (e) {
+		categories.style.position = 'fixed';
+	}
+	categories.style.position = 'inherit';
 });
