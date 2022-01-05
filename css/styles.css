@@ -38,7 +38,7 @@
 .side-menu {
 	color: var(--white-color);
 	background-color: #111;
-	width: 100%;
+	width: 20rem;
 	height: 100vh;
 	display: flex;
 	position: fixed;
@@ -56,7 +56,7 @@
 
 .side-menu.active {
 	left: 0%;
-	width: 100%;
+	width: 20rem;
 	background-color: #111;
 	justify-content: flex-start;
 	font-size: 1.8rem;
@@ -97,8 +97,10 @@
 .categories {
 	position: fixed;
 	z-index: 2;
-	/* overflow: hidden; */
+	overflow: hidden;
 	background-color: #111;
+	padding: 0.8rem;
+	display: block;
 }
 
 .categories-ul::-webkit-scrollbar {
@@ -139,14 +141,46 @@
 /* ////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////// */
 .videos {
-	height: auto;
+	height: 100vh;
+	width: 100vw;
 	overflow: auto;
-	margin-top: 9rem;
+	/* margin-top: rem; */
+
+	background-color: var(--black-color);
+	transform: translateX(20rem);
+	margin-top: 7rem;
+	padding: var(--padding-medium);
 }
 
-.videos video {
-	width: 20rem;
-	transform: translateX(20rem);
+.video-info {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	color: var(--grey-dark-color);
+	width: 32rem;
+}
+
+.videos .video {
+	width: 31rem;
+	padding: 0;
+	margin-bottom: 2rem;
+	/* height: 30rem; */
+	/* margin: 1rem; */
+}
+
+.channel-text {
+	display: flex;
+	/* align-items: center; */
+	gap: 1.3rem;
+}
+.channel-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-size: var(--font-medium);
+	color: var(--white-color);
 }
 
 /*/ ////////////// Video Info Metadata /////////////// */
