@@ -163,6 +163,7 @@ button:focus {
 }
 
 .user {
+	color: var(--white-color);
 	display: flex;
 	justify-content: center;
 	align-items: center;

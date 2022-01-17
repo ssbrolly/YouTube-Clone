@@ -143,7 +143,7 @@
 .videos {
 	height: 100vh;
 	width: 100vw;
-	overflow: auto;
+	/* overflow: auto; */
 	/* margin-top: rem; */
 
 	background-color: var(--black-color);
@@ -160,8 +160,8 @@
 	width: 32rem;
 }
 
-.videos .video {
-	width: 31rem;
+.video-info .video {
+	width: 30rem;
 	padding: 0;
 	margin-bottom: 2rem;
 	/* height: 30rem; */
@@ -179,8 +179,23 @@
 }
 
 .title {
-	font-size: var(--font-medium);
+	font-size: 1.4rem;
 	color: var(--white-color);
+	margin-bottom: 0.8rem;
+}
+
+.name {
+	margin-bottom: 0.4rem;
+	font-size: var(--font-small);
+}
+
+.views-days span {
+	font-size: var(--font-small);
+}
+
+.videos-list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 }
 
 /*/ ////////////// Video Info Metadata /////////////// */
