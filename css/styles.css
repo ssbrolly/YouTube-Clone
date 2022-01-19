@@ -143,6 +143,12 @@
 	padding: var(--padding-medium);
 }
 
+.videos-list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: var(--padding-medium);
+}
+
 .video-info {
 	display: flex;
 	flex-direction: column;
@@ -177,16 +183,19 @@
 	font-size: var(--font-small);
 }
 
+.views-days {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
 .views-days span {
 	font-size: var(--font-small);
 }
 
-.videos-list {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	row-gap: var(--padding-medium);
+.dot {
+	font-size: 2rem !important;
 }
-
 /*/ ////////////// Video Info Metadata /////////////// */
 /* ////////////////////////////////////////////////// */
 
