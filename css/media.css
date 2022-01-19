@@ -24,7 +24,6 @@
 	.main-section {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		/* margin: 0 var(--padding); */
 		column-gap: 3rem;
 	}
 
@@ -44,7 +43,6 @@
 		display: grid;
 		grid-template-columns: 3fr 1.5fr;
 		column-gap: 3rem;
-		/* grid-template-rows: repeat(2, 1fr); */
 	}
 
 	.player {
@@ -52,7 +50,6 @@
 	}
 
 	.info {
-		/* padding: var(--padding); */
 		grid-row: 2 / 3;
 	}
 }
