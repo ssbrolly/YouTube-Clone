@@ -84,7 +84,7 @@ const videos = [
 
 const videoHTML = videos => {
 	const html = `
-        <li>
+        <li class="video-li">
             <a href="${videos.href}" class="video-info">
                 <video class="video" src="${videos.src}"></video>
                 <div class="channel-text">
@@ -105,18 +105,11 @@ const videoHTML = videos => {
 	videoList.insertAdjacentHTML('beforeend', html);
 };
 
-// const videosArray = [videos.video1, videos.video2, videos.video3, videos.video4, videos.video5];
-
-// console.log(videosArray[0].href);
-
 const videoDisplay = number => {
 	for (let i = 1; i <= number; i++) {
 		const int = Math.round(Math.random() * 4);
-		console.log(int);
 		videoHTML(videos[int]);
 	}
 };
 
 videoDisplay(20);
-
-// console.log(video`.${video1}`);
