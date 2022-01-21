@@ -155,18 +155,17 @@
 	transition: all 0.3s;
 }
 
-.video-li:hover {
+/* .video-li:hover {
 	transform: scale(1.2);
 	opacity: 2;
 	transition-delay: 1s;
-	/* background-color: var(--white-color); */
-}
+} */
 
 .hover {
 	transform: scale(1.2);
 	opacity: 2;
 	transition-delay: 1s;
-	height: 32rem;
+	/* height: 32rem; */
 }
 
 .video-info {

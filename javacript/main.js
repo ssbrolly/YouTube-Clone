@@ -113,3 +113,30 @@ const videoDisplay = number => {
 };
 
 videoDisplay(20);
+
+// Video hover event //
+const videoLi = document.querySelectorAll('.video-li');
+
+videoLi.forEach(el => {
+	el.addEventListener('mouseover', e => {
+		el.classList.add('hover');
+		const elVideo = el.children[0].children[0];
+
+		setTimeout(() => {
+			if (el.classList.contains('hover')) {
+				elVideo.setAttribute('controls', true);
+				elVideo.play();
+			}
+		}, 1200);
+	});
+});
+
+videoLi.forEach(el => {
+	el.addEventListener('mouseout', e => {
+		el.classList.remove('hover');
+		const elVideo = el.children[0].children[0];
+		elVideo.removeAttribute('controls', false);
+		elVideo.pause();
+		elVideo.currentTime = 0;
+	});
+});
