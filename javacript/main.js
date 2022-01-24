@@ -1,7 +1,12 @@
 // Side Menu Toggle //
 const menuBars = document.querySelector('.menu-bars');
 const sideMenu = document.querySelector('.side-menu');
+
+// Categories //
 const categories = document.querySelector('.categories');
+
+// Videos //
+const videoSelect = document.querySelector('.videos');
 
 // Horizontal scrolling //
 const categoriesUl = document.querySelector('.categories-ul');
@@ -23,8 +28,14 @@ categoriesUl.addEventListener('wheel', e => {
 	categoriesUl.scrollLeft += e.deltaY;
 });
 
-// Video object and insertAdjacentHTML //
+// Categories position: relative when mouseover event//
+categories.addEventListener('mouseover', e => {
+	console.log(e);
+	categories.classList.add('relative');
+	videoSelect.style.marginTop = '.5rem';
+});
 
+// Video object and insertAdjacentHTML //
 const videos = [
 	{
 		user: 'U',
@@ -86,7 +97,7 @@ const videoHTML = videos => {
 	const html = `
         <li class="video-li">
             <a href="${videos.href}" class="video-info">
-                <video class="video" src="${videos.src}"></video>
+                <video muted="muted" class="video" src="${videos.src}"></video>
                 <div class="channel-text">
                     <span class="user">${videos.user}</span>
                     <div class="channel-info">

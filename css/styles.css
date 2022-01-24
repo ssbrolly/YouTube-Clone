@@ -94,9 +94,17 @@
 	z-index: 2;
 	overflow: hidden;
 	background-color: #111;
-	padding: 0.8rem;
+	padding: 0.8rem 0.8rem 0rem 0.8rem;
 	display: block;
 }
+
+.relative {
+	position: relative !important;
+}
+
+/* .categories:hover {
+	position: relative;
+} */
 
 .categories-ul::-webkit-scrollbar {
 	display: none;
@@ -154,12 +162,6 @@
 .video-li {
 	transition: all 0.3s;
 }
-
-/* .video-li:hover {
-	transform: scale(1.2);
-	opacity: 2;
-	transition-delay: 1s;
-} */
 
 .hover {
 	transform: scale(1.2);
