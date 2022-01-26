@@ -28,19 +28,18 @@
 /* ////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////// */
 
-.side-menu-section {
-	width: 17.5rem;
-}
-
 .side-menu {
+	background-color: rgb(31, 31, 31);
 	color: var(--white-color);
-	background-color: #111;
-	width: 20rem;
-	height: 100vh;
-	display: flex;
+	/* display: flex; */
 	position: fixed;
-	left: -100%;
+	/* justify-content: flex-start; */
 	padding-top: 2rem;
+	height: 100vh;
+	width: 8rem;
+	font-size: 1.8rem;
+	padding-right: 0.8rem;
+	overflow: auto;
 }
 
 .side-menu li {
@@ -52,14 +51,11 @@
 }
 
 .side-menu.active {
-	left: 0%;
+	padding-left: none;
 	width: 20rem;
-	background-color: #111;
-	justify-content: flex-start;
-	font-size: 1.8rem;
 }
 
-.side-menu.active hr {
+.side-menu hr {
 	width: 21rem;
 	margin: 1.8rem 0rem;
 	background-color: #90909042;
@@ -85,15 +81,39 @@
 	font-size: 1.4rem;
 }
 
+/* Inactive Side menu */
+.ul-inactive {
+	display: flex;
+	flex-direction: column;
+	gap: 2.6rem;
+}
+
+.side-menu-icon-inactive {
+	color: var(--white-color);
+	text-decoration: none;
+	align-items: center;
+	font-size: 1rem;
+
+	display: flex;
+	gap: 0.5rem;
+	flex-direction: column;
+}
+
+.side-menu-icon-inactive ion-icon {
+	width: 2.4rem;
+	height: 2.4rem;
+}
+
 /* //////////////// Categories //////////////////////////// */
 /* ////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////// */
 
 .categories {
 	position: fixed;
-	z-index: 2;
+	/* z-index: 1; */
 	overflow: hidden;
-	background-color: #111;
+	background-color: rgb(31, 31, 31);
+
 	padding: 0.8rem 0.8rem 0rem 0.8rem;
 	display: block;
 }
@@ -101,10 +121,6 @@
 .relative {
 	position: relative !important;
 }
-
-/* .categories:hover {
-	position: relative;
-} */
 
 .categories-ul::-webkit-scrollbar {
 	display: none;
@@ -151,6 +167,11 @@
 	padding: var(--padding-medium);
 }
 
+.videos.active {
+	/* width: 100vw; */
+	/* transform: translateX(0rem); */
+}
+
 .videos-list {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -167,9 +188,7 @@
 	transform: scale(1.2);
 	opacity: 2;
 	transition-delay: 1s;
-	/* height: 32rem; */
 }
-
 .video-info {
 	display: flex;
 	flex-direction: column;
@@ -178,7 +197,7 @@
 	width: 100%;
 }
 
-.video-info .video {
+.video-info.video {
 	width: 100%;
 	padding: 0;
 	margin-bottom: 2rem;

@@ -16,11 +16,124 @@ const videoList = document.querySelector('.videos-list');
 
 //////////////////////// Functions ////////////////////////////
 
+// Side Menu HTML //
+const sideMenuActive = () => {
+	const html = `
+        <ul class="ul-active">
+            <li>
+                <a href="#" class="side-menu-icon">
+                    <ion-icon name="home"></ion-icon>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="side-menu-icon">
+                    <ion-icon name="compass-outline"></ion-icon>
+                    <span>Explore</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="side-menu-icon">
+                    <ion-icon name="archive-outline"></ion-icon>
+                    <span>Subscription</span>
+                </a>
+            </li>
+            <hr />
+            <li>
+                <a href="#" class="side-menu-icon">
+                    <ion-icon name="library-outline"></ion-icon>
+                    <span>Library</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="side-menu-icon">
+                    <ion-icon name="timer-outline"></ion-icon>
+                    <span>History</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="side-menu-icon">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                    <span>Your videos</span>
+                </a>
+            </li>
+            <hr />
+            <li>
+                <a href="#" class="side-menu-icon">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <span>Watch later</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="side-menu-icon">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                    <span>Show more</span>
+                </a>
+            </li>
+        </ul>
+    `;
+
+	sideMenu.insertAdjacentHTML('beforeend', html);
+};
+
+// const ulActive = document.querySelector('.ul-active');
+
+const sideMenuNotActive = () => {
+	const html = `
+        <ul class="ul-inactive">
+            <li>
+                <a href="#" class="side-menu-icon-inactive">
+                    <ion-icon name="home"></ion-icon>
+                    <span class="inactive-span">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="side-menu-icon-inactive">
+                    <ion-icon name="compass-outline"></ion-icon>
+                    <span class="inactive-span">Explore</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="side-menu-icon-inactive">
+                    <ion-icon name="archive-outline"></ion-icon>
+                    <span class="inactive-span">Subscription</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="side-menu-icon-inactive">
+                    <ion-icon name="library-outline"></ion-icon>
+                    <span class="inactive-span">Library</span>
+                </a>
+            </li>
+        </ul>
+    `;
+
+	sideMenu.insertAdjacentHTML('beforeend', html);
+};
+
+// sideMenuNotActive();
+const ulActive = document.querySelector('.ul-active');
+const ulInactive = document.querySelector('.ul-inactive');
+
+ulInactive.style.display = 'none';
+
 // Side Menu Onclick event //
 menuBars.addEventListener('click', () => {
 	sideMenu.classList.toggle('active');
 	categories.classList.toggle('active');
+	menuBars.classList.toggle('active');
+	videoSelect.classList.toggle('active');
+
+	if (!sideMenu.classList.contains('active')) {
+		ulActive.style.display = 'none';
+		ulInactive.style.display = 'flex';
+	} else {
+		ulInactive.style.display = 'none';
+		ulActive.style.display = 'initial';
+	}
 });
+
+// Side menu check active status //
 
 // Categories side scrolling event //
 categoriesUl.addEventListener('wheel', e => {
@@ -29,8 +142,7 @@ categoriesUl.addEventListener('wheel', e => {
 });
 
 // Categories position: relative when mouseover event//
-categories.addEventListener('mouseover', e => {
-	console.log(e);
+categories.addEventListener('mouseover', () => {
 	categories.classList.add('relative');
 	videoSelect.style.marginTop = '.5rem';
 });

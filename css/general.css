@@ -59,7 +59,8 @@ button:focus {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0.5rem var(--padding-large);
-	background-color: #111;
+	background-color: rgb(31, 31, 31);
+
 	color: var(--white-color);
 	position: sticky;
 	top: 0;
@@ -89,6 +90,10 @@ button:focus {
 	align-self: center;
 	/* width: 3rem;
 	height: 3rem; */
+}
+
+.menu-bars.active {
+	color: blue !important;
 }
 
 .youtube-icon {
