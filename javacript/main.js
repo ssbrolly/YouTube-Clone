@@ -76,8 +76,6 @@ const sideMenuActive = () => {
 	sideMenu.insertAdjacentHTML('beforeend', html);
 };
 
-// const ulActive = document.querySelector('.ul-active');
-
 const sideMenuNotActive = () => {
 	const html = `
         <ul class="ul-inactive">
